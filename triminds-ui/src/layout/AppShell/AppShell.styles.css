@@ -1,0 +1,25 @@
+.tm-app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.tm-header {
+  height: 60px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.tm-body {
+  display: flex;
+  flex: 1;
+}
+
+.tm-sidebar {
+  width: 260px;
+  border-right: 1px solid #1f2937;
+}
+
+.tm-content {
+  flex: 1;
+  padding: 16px;
+}

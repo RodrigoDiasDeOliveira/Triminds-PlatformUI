@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "turbo run dev",
     "build": "turbo run build",
-    "build:ui": "turbo run build --filter=@triminds/ui-core",
+    "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,js,json}\""
+    "type-check": "turbo run type-check",
+    "test": "turbo run test",
+    "ui-core:build": "turbo run build --filter=@triminds/ui-core",
+    "ui-core:dev": "turbo run dev --filter=@triminds/ui-core"
   },
   "devDependencies": {
     "turbo": "^2.4.4",
-    "prettier": "^3.5.0",
     "typescript": "^5.8.0"
   },
   "packageManager": "pnpm@9.15.0"

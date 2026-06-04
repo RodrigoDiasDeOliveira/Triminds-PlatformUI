@@ -5,7 +5,7 @@ import { cn } from '@/utils/cn'
 const ToastProvider = ToastPrimitives.Provider
 
 const ToastViewport = React.forwardRef<
-  HTMLDivElement,
+  HTMLOListElement,
   React.ComponentPropsWithoutRef<typeof ToastPrimitives.Viewport>
 >(({ className, ...props }, ref) => (
   <ToastPrimitives.Viewport

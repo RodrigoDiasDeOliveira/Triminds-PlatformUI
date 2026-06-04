@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { ThemeProvider, useTheme } from '@/theme/ThemeProvider'
-import { mockTrimindsConfig } from '../../fixtures/mock-data'
+import { mockTrimindsConfig } from '../fixtures/mock-data'
 
 function TestComponent() {
   const { theme, config, updateTheme } = useTheme()

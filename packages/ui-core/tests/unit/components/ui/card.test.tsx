@@ -36,12 +36,12 @@ describe('Card', () => {
   })
 
   it('CardHeader has correct styling', () => {
-    const { container } = render(
+    render(
       <Card>
         <CardHeader>Header</CardHeader>
       </Card>
     )
-    const header = container.querySelector('div:nth-child(1)')
+    const header = screen.getByText('Header')
     expect(header).toHaveClass('p-6')
   })
 
@@ -57,12 +57,12 @@ describe('Card', () => {
   })
 
   it('CardContent has correct padding', () => {
-    const { container } = render(
+    render(
       <Card>
         <CardContent>Content</CardContent>
       </Card>
     )
-    const content = container.querySelector('div:nth-child(1)')
+    const content = screen.getByText('Content')
     expect(content).toHaveClass('p-6')
   })
 

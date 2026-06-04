@@ -1,19 +1,21 @@
 {
   "root": true,
   "env": { "browser": true, "es2021": true },
+  "parser": "@typescript-eslint/parser",
   "extends": [
     "eslint:recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:react-refresh/recommended"
+    "plugin:react-hooks/recommended"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": { "jsx": true }
   },
-  "plugins": ["react-hooks"],
+  "plugins": ["react-hooks", "react-refresh"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    "react-refresh/only-export-components": "warn",
+    "no-unused-vars": "off"
   }
 }

@@ -1,5 +1,8 @@
 # Triminds Platform
 
+<img width="1983" height="793" alt="triminds one" src="https://github.com/user-attachments/assets/1dd6f199-e273-4b0f-8dbf-230712e4d7fb" />
+
+
 The official Design System and Frontend Platform of Triminds.
 
 ## Overview
@@ -21,10 +24,10 @@ The platform provides:
 
 After developing multiple products such as:
 
-* OCL Logistics
-* Satellite Classification Platform
-* AI Agents
-* Vector AI
+* Triminds Logistics Plataform
+* Triminds Geo AI (Satellite Image Classification Platform)
+* Triminds Trusted Search (AI Agents, RAG Systems)
+* Triminds Security Layer (cybersecurity)
 * Future commercial products
 
 we identified recurring challenges:
@@ -68,9 +71,9 @@ Strict TypeScript typing.
 
 Support for independent themes:
 
-* OCL
-* Satellite
-* Vector AI
+* Logistics
+* Security
+* RAG system
 * Future Triminds products
 
 ---

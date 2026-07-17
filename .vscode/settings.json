@@ -1,4 +1,4 @@
 {
-  "typescript.tsdk": "./packages/ui-core/node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "js/ts.tsdk.path": "/path/to/typescript",
+  "js/ts.tsdk.promptToUseWorkspaceVersion": true
 }

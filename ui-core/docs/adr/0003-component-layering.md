@@ -18,9 +18,9 @@ Accepted
 
 As a shared frontend platform, Triminds must support multiple applications:
 
-* OCL
-* Satellite
-* Vector AI
+* Logistics
+* Triminds Geo AI
+* RAG trusted Search
 * Future internal and external products
 
 Without a strict component hierarchy, Design Systems tend to degrade into:
@@ -159,9 +159,9 @@ Final composition layer consumed by products.
 
 ### Examples
 
-* OCL App
-* Satellite App
-* Vector AI App
+* ObjectScanner App
+* Geo AI App
+* RAG Trusted Search AI App
 
 ### Responsibility
 

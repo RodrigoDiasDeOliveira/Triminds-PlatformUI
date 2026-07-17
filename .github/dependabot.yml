@@ -1,0 +1,20 @@
+version: 2
+
+updates:
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # Root workspace (Turbo, pnpm, etc.)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # ui-core package
+  - package-ecosystem: "npm"
+    directory: "/ui-core"
+    schedule:
+      interval: "weekly"

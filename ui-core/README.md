@@ -1,21 +1,215 @@
-# Triminds UI
+# Triminds Platform
 
-A lightweight UI library for Triminds with a focus on components, layout systems, theming, tokens, and higher-level patterns.
+<img width="1983" height="793" alt="triminds one" src="https://github.com/user-attachments/assets/1dd6f199-e273-4b0f-8dbf-230712e4d7fb" />
 
-## Structure
 
-- `src/components` — base UI components
-- `src/layout` — app shell, grid, container, navigation systems
-- `src/theme` — core theme definitions and theme types
-- `src/tokens` — professional design tokens
-- `src/patterns` — layout patterns for dashboards, data-heavy apps, AI chat, and upload workflows
-- `src/hooks` — reusable UI hooks and responsive utilities
-- `src/utils` — helper utilities and shared helpers
-- `src/styles` — global styles, resets, and theme styling helpers
-- `docs` — documentation and design guidance
-- `stories` — future Storybook stories and component examples
+The official Design System and Frontend Platform of Triminds.
 
-## Scripts
+## Overview
 
-- `npm run build` — compile TypeScript
-- `npm run typecheck` — validate types without emitting files
+Triminds Platform is a shared UI ecosystem designed to accelerate the development of all Triminds products through a unified Design System, reusable components, centralized theming, and modern frontend architecture.
+
+The platform provides:
+
+* Consistent user experience across products
+* Shared UI components
+* Multi-theme support
+* Accessibility-first design
+* High performance and scalability
+* Reduced frontend technical debt
+
+---
+
+## Why Triminds Platform?
+
+After developing multiple products such as:
+
+* Triminds Logistics Plataform
+* Triminds Geo AI (Satellite Image Classification Platform)
+* Triminds Trusted Search (AI Agents, RAG Systems)
+* Triminds Security Layer (cybersecurity)
+* Future commercial products
+
+we identified recurring challenges:
+
+* UI inconsistency
+* Duplicate components
+* Different frontend architectures
+* Slow delivery of new products
+* Weak brand standardization
+
+Triminds Platform solves these issues by creating a single source of truth for frontend development.
+
+---
+
+## Core Principles
+
+### Design System First
+
+Every component follows a centralized design language.
+
+### Composition over Configuration
+
+Small reusable primitives compose complex interfaces.
+
+### Accessibility by Default
+
+Built on Radix UI primitives.
+
+### Type Safety
+
+Strict TypeScript typing.
+
+### Performance
+
+* Tree shaking
+* Code splitting
+* Optimized bundles
+* Vite library mode
+
+### Multi-product Theming
+
+Support for independent themes:
+
+* Logistics
+* Security
+* RAG system
+* Future Triminds products
+
+---
+
+## Technology Stack
+
+| Layer           | Technology            |
+| --------------- | --------------------- |
+| Framework       | React 19              |
+| Language        | TypeScript            |
+| Styling         | Tailwind CSS v4       |
+| Components      | Radix UI              |
+| Variants        | CVA                   |
+| Forms           | React Hook Form + Zod |
+| Build           | Vite                  |
+| Monorepo        | Turborepo             |
+| Package Manager | pnpm                  |
+| Testing         | Vitest + RTL          |
+| Documentation   | Storybook (planned)   |
+
+---
+
+## Project Structure
+
+```bash
+triminds-platform/
+├── apps/
+│   └── demo/
+│
+├── packages/
+│   ├── ui-core/
+│   ├── ui-themes/
+│   └── shared-utils/
+│
+├── docs/
+├── .github/
+└── turbo.json
+```
+
+---
+
+## Quick Start
+
+```bash
+pnpm install
+
+pnpm dev
+
+pnpm build
+```
+
+---
+
+## Example
+
+```tsx
+import { Button, Card, ThemeProvider } from '@triminds/ui-core';
+
+export default function App() {
+  return (
+    <ThemeProvider theme="satellite">
+      <Card variant="elevated">
+        <Button variant="primary">
+          Launch Mission
+        </Button>
+      </Card>
+    </ThemeProvider>
+  );
+}
+```
+
+---
+
+## Roadmap
+
+### Phase 1
+
+* Design Tokens
+* Theme Provider
+* Core Components
+* Initial Product Integration
+
+### Phase 2
+
+* Storybook
+* DataTable
+* Charts
+* AI Components
+* Dark Mode
+
+### Phase 3
+
+* React Native Support
+* Tauri Support
+* Figma Token Sync
+
+---
+
+## Documentation
+
+* docs/architecture.md
+* docs/adr/
+
+---
+
+## License
+
+Copyright © Triminds.
+All rights reserved.
+
+
+# Triminds Platform
+
+**Internal UI Framework** developed by Triminds to standardize and accelerate the development of all internal applications.
+
+---
+
+## ✨ Key Features
+
+- **Rich and accessible components** (Built on top of Radix UI)
+- **Powerful theming system** (colors, branding, radius, density per project)
+- **Consistent Layout System** (AppShell, Sidebar, Header, etc.)
+- **Fully configurable** per application
+- **Monorepo** architecture with Turborepo + pnpm
+- **Unit testing** included (Vitest)
+
+👨‍💻 Contributing
+
+Fork the project
+Create your feature branch (feature/amazing-feature)
+Follow the existing component patterns
+Add tests
+Submit a Pull Request
+
+
+📄 License
+Internal — Triminds © 2026
+
+Made with ❤️ by Triminds Team

@@ -19,7 +19,10 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm typecheck
+      - run: pnpm pnpm --filter @triminds/ui-core typecheck
+      - run: pnpm --filter @triminds/ui-core lint
+      - run: pnpm --filter @triminds/ui-core test
+      - run: pnpm --filter @triminds/ui-core build
       - run: pnpm test --if-present
       - run: pnpm build
 

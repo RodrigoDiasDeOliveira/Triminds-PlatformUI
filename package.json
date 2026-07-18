@@ -1,0 +1,21 @@
+{
+  "name": "triminds-platform",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean && rm -rf node_modules .turbo",
+    "changeset": "changeset"
+  },
+  "devDependencies": {
+    "turbo": "latest",
+    "@changesets/cli": "^2.27.0"
+  },
+  "packageManager": "pnpm@9.5.0",
+  "engines": {
+    "node": ">=20"
+  }
+}

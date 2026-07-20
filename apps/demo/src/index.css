@@ -1,3 +1,4 @@
+@import '@triminds/ui-core/styles';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

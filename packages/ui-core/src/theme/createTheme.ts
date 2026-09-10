@@ -1,4 +1,4 @@
-import { type ThemeConfig } from './types.ts'
+import { type ThemeConfig } from './types'
 
 export const defaultTheme: ThemeConfig = {
   colors: {

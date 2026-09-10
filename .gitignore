@@ -1,0 +1,17 @@
+node_modules/
+.pnpm-store/
+.turbo/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Build and coverage output
+dist/
+build/
+coverage/
+
+# Local tooling
+.DS_Store
+*.log

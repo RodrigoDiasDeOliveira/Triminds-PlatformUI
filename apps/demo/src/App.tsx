@@ -8,7 +8,7 @@ function App() {
     <ThemeProvider>
       <div className="min-h-screen bg-background text-foreground p-8">
         <div className="max-w-2xl mx-auto space-y-8">
-          <h1 className="text-4xl font-bold">Triminds UI Demo</h1>
+          <h1 className="text-4xl font-bold">Trimindslabs UI Demo</h1>
 
           <Card className="p-8">
             <h2 className="text-2xl mb-6">Testando Componentes</h2>
